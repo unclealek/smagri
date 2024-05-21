@@ -28,7 +28,7 @@ const Ecommerce = () => {
                 color='white'
                 bgColor = 'blue'
                 text='See Farm'
-                boarderRadius='10px'
+                borderRadius='10px'
                 size= 'md'
               />
             </div>
@@ -47,12 +47,11 @@ const Ecommerce = () => {
               </button>
               <p className='mt-3'>
                 <span className='text-lg font-semibold'>
-                  {item.amount}
+                  {item.amount}{item.unit}
                 </span>
-                <span className={`text-sm text-$ {item.pcColor} ml-2`}>
-                {item.percentage}
-                </span>
+                <span className={`text-sm text-${item.pcColor} ml-2`}>{item.percentage}</span>
               </p>
+              <p className='text-sm text-gray-400 mt-1'>{item.title}</p>
           </div>
          ))}
         </div>

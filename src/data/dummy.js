@@ -5,8 +5,9 @@ import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft
 import { BiColorFill } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
 import { RiContactsLine, RiStockLine } from 'react-icons/ri';
-import { MdOutlineSupervisorAccount } from 'react-icons/md';
-import { HiOutlineRefresh } from 'react-icons/hi';
+import { FaGlassWater } from "react-icons/fa6";
+import { FaCloudSunRain, FaWater } from "react-icons/fa";
+import {  GiPressureCooker, GiPlantRoots } from "react-icons/gi";
 import { TiTick } from 'react-icons/ti';
 import { GiLouvrePyramid } from 'react-icons/gi';
 import { GrLocation } from 'react-icons/gr';
@@ -612,42 +613,45 @@ export const chatData = [
     time: '1:12 AM',
   },
 ];
-
+//Data
 export const earningData = [
   {
-    icon: <MdOutlineSupervisorAccount />,
-    amount: '39,354',
+    icon: <FaGlassWater />,
+    amount: '3900 ',
+    unit: 'Litre',
     percentage: '-4%',
-    title: 'Customers',
-    iconColor: '#03C9D7',
-    iconBg: '#E5FAFB',
+    title: 'Water Level',
+    iconColor: '#82C9C1',
+    iconBg: '#931621',
     pcColor: 'red-600',
   },
   {
-    icon: <BsBoxSeam />,
-    amount: '4,396',
+    icon: <GiPressureCooker />,
+    amount: '4,396 ',
+    unit: 'psa',
     percentage: '+23%',
-    title: 'Products',
-    iconColor: 'rgb(255, 244, 229)',
-    iconBg: 'rgb(254, 201, 15)',
+    title: 'Water Pressure',
+    iconColor: '#523249',
+    iconBg: '#DBEBC0',
     pcColor: 'green-600',
   },
   {
-    icon: <FiBarChart />,
-    amount: '423,39',
+    icon: <GiPlantRoots />,
+    amount: '423,39 ',
+    unit: 'kg/m3',
     percentage: '+38%',
-    title: 'Sales',
-    iconColor: 'rgb(228, 106, 118)',
+    title: 'Soil Moisture',
+    iconColor: 'rgb(0, 194, 146)',
     iconBg: 'rgb(255, 244, 229)',
 
     pcColor: 'green-600',
   },
   {
-    icon: <HiOutlineRefresh />,
-    amount: '39,354',
+    icon: <FaCloudSunRain />,
+    amount: '39,354 ',
     percentage: '-12%',
-    title: 'Refunds',
-    iconColor: 'rgb(0, 194, 146)',
+    title: 'Weather Station',
+    iconColor: '#03C9D7',
     iconBg: 'rgb(235, 250, 242)',
     pcColor: 'red-600',
   },
@@ -687,7 +691,6 @@ export const recentTransactions = [
     amount: '+$350',
     title: 'Bank Transfer',
     desc: 'Money Added',
-
     iconColor: 'rgb(228, 106, 118)',
     iconBg: 'rgb(255, 244, 229)',
     pcColor: 'green-600',
